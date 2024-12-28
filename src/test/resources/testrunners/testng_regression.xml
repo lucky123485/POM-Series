@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Opencart App Test Regression Suite" verbose="4" thread-count="4" parallel="tests">
+
+
+   <test name="Login Page Tests">
+   <parameter name="Browser" value="chrome"></parameter>
+    <classes>
+    <class name="com.qa.opencart1.tests.logInPageTest1" />
+      </classes>
+   </test>
+   
+   <test name="Account Page Tests">
+   <parameter name="Browser" value="chrome"></parameter>
+   
+    <classes>
+    <class name="com.qa.opencart1.tests.AccountPageTest1" />
+      </classes>
+   </test>
+    
+   <test name="Product Page Tests">
+   <parameter name="Browser" value="chrome"></parameter>
+    <classes>
+    <class name="com.qa.opencart1.tests.ProductResultPageTest" />
+      </classes>
+   </test>
+   
+   
+   <test name="Register Page Tests">
+   <parameter name="Browser" value="chrome"></parameter>
+    <classes>
+    <class name="com.qa.opencart1.tests.RegisterPageTest" />
+      </classes>
+   </test>
+
+</suite>
